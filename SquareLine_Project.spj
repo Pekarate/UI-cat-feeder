@@ -169,7 +169,15 @@
               {
                 "nid": 10,
                 "strtype": "OBJECT/Name",
-                "strval": "Label1",
+                "strval": "cur time",
+                "childs": [
+                  {
+                    "nid": 15,
+                    "strtype": "_codename/Codename",
+                    "strval": "cur_time",
+                    "InheritedType": 10
+                  }
+                ],
                 "InheritedType": 10
               },
               {
@@ -287,12 +295,6 @@
                 "InheritedType": 10
               },
               {
-                "nid": 1040,
-                "strtype": "LABEL/Recolor",
-                "strval": "False",
-                "InheritedType": 2
-              },
-              {
                 "part": "lv.PART.MAIN",
                 "childs": [
                   {
@@ -338,7 +340,15 @@
               {
                 "nid": 10,
                 "strtype": "OBJECT/Name",
-                "strval": "Label2",
+                "strval": "cur date",
+                "childs": [
+                  {
+                    "nid": 15,
+                    "strtype": "_codename/Codename",
+                    "strval": "cur_date",
+                    "InheritedType": 10
+                  }
+                ],
                 "InheritedType": 10
               },
               {
@@ -451,12 +461,6 @@
                 "strtype": "LABEL/Text",
                 "strval": "FRI, 02 JAN 2026",
                 "InheritedType": 10
-              },
-              {
-                "nid": 1040,
-                "strtype": "LABEL/Recolor",
-                "strval": "False",
-                "InheritedType": 2
               },
               {
                 "part": "lv.PART.MAIN",
@@ -772,12 +776,6 @@
                 "InheritedType": 10
               },
               {
-                "nid": 1040,
-                "strtype": "LABEL/Recolor",
-                "strval": "False",
-                "InheritedType": 2
-              },
-              {
                 "part": "lv.PART.MAIN",
                 "childs": [
                   {
@@ -829,7 +827,16 @@
               {
                 "nid": 10,
                 "strtype": "OBJECT/Name",
-                "strval": "Label4",
+                "strval": "next meal time",
+                "childs": [
+                  {
+                    "nid": 15,
+                    "flags": 1048576,
+                    "strtype": "_codename/Codename",
+                    "strval": "next_meal_time",
+                    "InheritedType": 10
+                  }
+                ],
                 "InheritedType": 10
               },
               {
@@ -947,12 +954,6 @@
                 "InheritedType": 10
               },
               {
-                "nid": 1040,
-                "strtype": "LABEL/Recolor",
-                "strval": "False",
-                "InheritedType": 2
-              },
-              {
                 "part": "lv.PART.MAIN",
                 "childs": [
                   {
@@ -999,7 +1000,15 @@
               {
                 "nid": 10,
                 "strtype": "OBJECT/Name",
-                "strval": "Label5",
+                "strval": "volume",
+                "childs": [
+                  {
+                    "nid": 15,
+                    "strtype": "_codename/Codename",
+                    "strval": "volume",
+                    "InheritedType": 10
+                  }
+                ],
                 "InheritedType": 10
               },
               {
@@ -1112,12 +1121,6 @@
                 "strtype": "LABEL/Text",
                 "strval": "1/4 CUP",
                 "InheritedType": 10
-              },
-              {
-                "nid": 1040,
-                "strtype": "LABEL/Recolor",
-                "strval": "True",
-                "InheritedType": 2
               },
               {
                 "part": "lv.PART.MAIN",
@@ -1246,7 +1249,7 @@
                 "strtype": "OBJECT/Position",
                 "intarray": [
                   167,
-                  54
+                  53
                 ],
                 "InheritedType": 7
               },
@@ -1332,12 +1335,6 @@
                 "InheritedType": 10
               },
               {
-                "nid": 1040,
-                "strtype": "LABEL/Recolor",
-                "strval": "False",
-                "InheritedType": 2
-              },
-              {
                 "part": "lv.PART.MAIN",
                 "childs": [
                   {
@@ -1359,7 +1356,7 @@
                       {
                         "nid": 10450,
                         "strtype": "_style/Text_Font",
-                        "strval": "montserrat_8",
+                        "strval": "montserrat_12",
                         "InheritedType": 3
                       }
                     ],
@@ -1384,7 +1381,15 @@
           {
             "nid": 10,
             "strtype": "OBJECT/Name",
-            "strval": "Screen1",
+            "strval": "home screen",
+            "childs": [
+              {
+                "nid": 15,
+                "strtype": "_codename/Codename",
+                "strval": "home_screen",
+                "InheritedType": 10
+              }
+            ],
             "InheritedType": 10
           },
           {
@@ -1525,7 +1530,7 @@
   "selected_theme": "Default",
   "info": {
     "name": "SquareLine_Project.spj",
-    "depth": 0,
+    "depth": 1,
     "width": 428,
     "height": 128,
     "rotation": 0,
@@ -1534,8 +1539,8 @@
     "shape": "RECTANGLE",
     "multilang": "DISABLE",
     "description": "",
-    "board": "Eclipse with SDL for development on PC",
-    "board_version": "v1.0.3",
+    "board": "VS Code with SDL for development on PC",
+    "board_version": "v2.0.2",
     "editor_version": "1.5.4",
     "image": "",
     "export_temp_image": false,
@@ -1551,15 +1556,15 @@
     "backup_cnt": 11,
     "autosave_cnt": 0,
     "group_color_cnt": 0,
-    "lvgl_version": "8.3.11",
+    "lvgl_version": "9.2.2",
     "callfuncsexport": "C_FILE",
     "imageexport": "SOURCE",
-    "lvgl_include_path": null,
+    "lvgl_include_path": "lvgl.h",
     "naming": "Name",
     "naming_force_lowercase": false,
     "naming_add_subcomponent": false,
-    "nidcnt": 1000202,
-    "BitDepth": 32,
+    "nidcnt": 1000404,
+    "BitDepth": 16,
     "Name": "SquareLine_Project"
   }
 }
