@@ -10,19 +10,22 @@
 extern "C" {
 #endif
 
-    #include "lvgl.h"
+#include "lvgl.h"
 
 #include "ui_helpers.h"
 #include "ui_events.h"
 
 
-///////////////////// SCREENS ////////////////////
+///////////////////// SCREENS ////////////////////
+
 #include "screens/ui_home_screen.h"
 
-///////////////////// VARIABLES ////////////////////
+///////////////////// VARIABLES ////////////////////
 
-// EVENTS
-extern lv_obj_t *ui____initial_actions0;
+
+// EVENTS
+
+extern lv_obj_t * ui____initial_actions0;
 
 // UI INIT
 void ui_init(void);
