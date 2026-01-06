@@ -19,6 +19,8 @@ extern "C" {
 ///////////////////// SCREENS ////////////////////
 
 #include "screens/ui_home_screen.h"
+#include "screens/ui_SETTINGS.h"
+#include "screens/ui_SETTINGS1.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -26,6 +28,14 @@ extern "C" {
 // EVENTS
 
 extern lv_obj_t * ui____initial_actions0;
+
+// IMAGES AND IMAGE SETS
+LV_IMG_DECLARE(ui_img_1388130735);    // assets/icons8-setup-18.png
+LV_IMG_DECLARE(ui_img_1649062918);    // assets/box-18-red.png
+LV_IMG_DECLARE(ui_img_419196496);    // assets/icons8-schedule-24.png
+LV_IMG_DECLARE(ui_img_336627466);    // assets/audio-24x24.png
+LV_IMG_DECLARE(ui_img_1236581539);    // assets/time-24x24.png
+LV_IMG_DECLARE(ui_img_1476654543);    // assets/icons8-info-24.png
 
 // UI INIT
 void ui_init(void);
