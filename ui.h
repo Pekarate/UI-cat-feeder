@@ -19,8 +19,12 @@ extern "C" {
 ///////////////////// SCREENS ////////////////////
 
 #include "screens/ui_home_screen.h"
-#include "screens/ui_SETTINGS.h"
-#include "screens/ui_SETTINGS1.h"
+#include "screens/ui_settings.h"
+#include "screens/ui_audioconfig.h"
+#include "screens/ui_schedule.h"
+#include "screens/ui_editslot.h"
+#include "screens/ui_info.h"
+#include "screens/ui_Screen1.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -36,6 +40,9 @@ LV_IMG_DECLARE(ui_img_419196496);    // assets/icons8-schedule-24.png
 LV_IMG_DECLARE(ui_img_336627466);    // assets/audio-24x24.png
 LV_IMG_DECLARE(ui_img_1236581539);    // assets/time-24x24.png
 LV_IMG_DECLARE(ui_img_1476654543);    // assets/icons8-info-24.png
+LV_IMG_DECLARE(ui_img_play19x19_png);    // assets/play19x19.png
+LV_IMG_DECLARE(ui_img_yes20x20_png);    // assets/yes20x20.png
+LV_IMG_DECLARE(ui_img_no20x20_png);    // assets/no20x20.png
 
 // UI INIT
 void ui_init(void);

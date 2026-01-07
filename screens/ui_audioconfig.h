@@ -3,34 +3,35 @@
 // LVGL version: 9.2.2
 // Project name: SquareLine_Project
 
-#ifndef UI_SETTINGS1_H
-#define UI_SETTINGS1_H
+#ifndef UI_AUDIOCONFIG_H
+#define UI_AUDIOCONFIG_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-// SCREEN: ui_SETTINGS1
-extern void ui_SETTINGS1_screen_init(void);
-extern void ui_SETTINGS1_screen_destroy(void);
-extern lv_obj_t * ui_SETTINGS1;
+// SCREEN: ui_audioconfig
+extern void ui_audioconfig_screen_init(void);
+extern void ui_audioconfig_screen_destroy(void);
+extern lv_obj_t * ui_audioconfig;
 extern lv_obj_t * ui_Panel4;
 extern lv_obj_t * ui_settingLabel1;
 extern lv_obj_t * ui_iconImage1;
 extern lv_obj_t * ui_okLabel1;
 extern lv_obj_t * ui_boxImage1;
 extern lv_obj_t * ui_backLabel1;
-extern lv_obj_t * ui_btnSchedule1;
+extern lv_obj_t * ui_btnVolume;
 extern lv_obj_t * ui_scheduleLabel1;
-extern lv_obj_t * ui_btnAudio1;
+extern lv_obj_t * ui_btnRecord;
 extern lv_obj_t * ui_audioLabel1;
 extern lv_obj_t * ui_ImageAudio1;
-extern lv_obj_t * ui_btnTime1;
+extern lv_obj_t * ui_btnBeep;
 extern lv_obj_t * ui_LabelTime1;
-extern lv_obj_t * ui_btnInfo1;
+extern lv_obj_t * ui_btnPlay;
 extern lv_obj_t * ui_LabelInfo1;
 extern lv_obj_t * ui_ImageInfo1;
-extern lv_obj_t * ui_scheduleLabel2;
+extern lv_obj_t * ui_volumeLabel;
+extern lv_obj_t * ui_beepLabel;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

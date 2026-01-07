@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
-// SCREEN: ui_SETTINGS
-extern void ui_SETTINGS_screen_init(void);
-extern void ui_SETTINGS_screen_destroy(void);
-extern lv_obj_t * ui_SETTINGS;
+// SCREEN: ui_settings
+extern void ui_settings_screen_init(void);
+extern void ui_settings_screen_destroy(void);
+extern lv_obj_t * ui_settings;
 extern lv_obj_t * ui_Panel3;
 extern lv_obj_t * ui_settingLabel;
 extern lv_obj_t * ui_iconImage;

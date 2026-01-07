@@ -5,34 +5,35 @@
 
 #include "../ui.h"
 
-lv_obj_t * ui_SETTINGS1 = NULL;
+lv_obj_t * ui_audioconfig = NULL;
 lv_obj_t * ui_Panel4 = NULL;
 lv_obj_t * ui_settingLabel1 = NULL;
 lv_obj_t * ui_iconImage1 = NULL;
 lv_obj_t * ui_okLabel1 = NULL;
 lv_obj_t * ui_boxImage1 = NULL;
 lv_obj_t * ui_backLabel1 = NULL;
-lv_obj_t * ui_btnSchedule1 = NULL;
+lv_obj_t * ui_btnVolume = NULL;
 lv_obj_t * ui_scheduleLabel1 = NULL;
-lv_obj_t * ui_btnAudio1 = NULL;
+lv_obj_t * ui_btnRecord = NULL;
 lv_obj_t * ui_audioLabel1 = NULL;
 lv_obj_t * ui_ImageAudio1 = NULL;
-lv_obj_t * ui_btnTime1 = NULL;
+lv_obj_t * ui_btnBeep = NULL;
 lv_obj_t * ui_LabelTime1 = NULL;
-lv_obj_t * ui_btnInfo1 = NULL;
+lv_obj_t * ui_btnPlay = NULL;
 lv_obj_t * ui_LabelInfo1 = NULL;
 lv_obj_t * ui_ImageInfo1 = NULL;
-lv_obj_t * ui_scheduleLabel2 = NULL;
+lv_obj_t * ui_volumeLabel = NULL;
+lv_obj_t * ui_beepLabel = NULL;
 // event funtions
 
 // build funtions
 
-void ui_SETTINGS1_screen_init(void)
+void ui_audioconfig_screen_init(void)
 {
-    ui_SETTINGS1 = lv_obj_create(NULL);
-    lv_obj_remove_flag(ui_SETTINGS1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    ui_audioconfig = lv_obj_create(NULL);
+    lv_obj_remove_flag(ui_audioconfig, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Panel4 = lv_obj_create(ui_SETTINGS1);
+    ui_Panel4 = lv_obj_create(ui_audioconfig);
     lv_obj_set_width(ui_Panel4, 428);
     lv_obj_set_height(ui_Panel4, 28);
     lv_obj_remove_flag(ui_Panel4, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -42,17 +43,17 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_set_style_border_color(ui_Panel4, lv_color_hex(0x0F172A), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_Panel4, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_settingLabel1 = lv_label_create(ui_SETTINGS1);
+    ui_settingLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_settingLabel1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_settingLabel1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_settingLabel1, 188);
     lv_obj_set_y(ui_settingLabel1, 8);
-    lv_label_set_text(ui_settingLabel1, "SETTINGS");
+    lv_label_set_text(ui_settingLabel1, "AUDIO CONFIG");
     lv_obj_set_style_text_color(ui_settingLabel1, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_settingLabel1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_settingLabel1, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_iconImage1 = lv_image_create(ui_SETTINGS1);
+    ui_iconImage1 = lv_image_create(ui_audioconfig);
     lv_image_set_src(ui_iconImage1, &ui_img_1388130735);
     lv_obj_set_width(ui_iconImage1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_iconImage1, LV_SIZE_CONTENT);    /// 1
@@ -61,7 +62,7 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_add_flag(ui_iconImage1, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_iconImage1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_okLabel1 = lv_label_create(ui_SETTINGS1);
+    ui_okLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_okLabel1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_okLabel1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_okLabel1, 32);
@@ -71,7 +72,7 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_set_style_text_opa(ui_okLabel1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_okLabel1, &lv_font_montserrat_8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_boxImage1 = lv_image_create(ui_SETTINGS1);
+    ui_boxImage1 = lv_image_create(ui_audioconfig);
     lv_image_set_src(ui_boxImage1, &ui_img_1649062918);
     lv_obj_set_width(ui_boxImage1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_boxImage1, LV_SIZE_CONTENT);    /// 1
@@ -80,7 +81,7 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_add_flag(ui_boxImage1, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_boxImage1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_backLabel1 = lv_label_create(ui_SETTINGS1);
+    ui_backLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_backLabel1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_backLabel1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_backLabel1, 339);
@@ -90,20 +91,20 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_set_style_text_opa(ui_backLabel1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_backLabel1, &lv_font_montserrat_8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_btnSchedule1 = lv_button_create(ui_SETTINGS1);
-    lv_obj_set_width(ui_btnSchedule1, 214);
-    lv_obj_set_height(ui_btnSchedule1, 50);
-    lv_obj_set_x(ui_btnSchedule1, 0);
-    lv_obj_set_y(ui_btnSchedule1, 28);
-    lv_obj_add_flag(ui_btnSchedule1, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
-    lv_obj_remove_flag(ui_btnSchedule1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_radius(ui_btnSchedule1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnSchedule1, lv_color_hex(0xEFF6FF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_btnSchedule1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(ui_btnSchedule1, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_side(ui_btnSchedule1, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_btnVolume = lv_button_create(ui_audioconfig);
+    lv_obj_set_width(ui_btnVolume, 214);
+    lv_obj_set_height(ui_btnVolume, 50);
+    lv_obj_set_x(ui_btnVolume, 0);
+    lv_obj_set_y(ui_btnVolume, 28);
+    lv_obj_add_flag(ui_btnVolume, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_remove_flag(ui_btnVolume, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_radius(ui_btnVolume, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnVolume, lv_color_hex(0xEFF6FF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_btnVolume, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(ui_btnVolume, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_side(ui_btnVolume, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_scheduleLabel1 = lv_label_create(ui_SETTINGS1);
+    ui_scheduleLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_scheduleLabel1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_scheduleLabel1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_scheduleLabel1, 79);
@@ -113,28 +114,28 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_set_style_text_opa(ui_scheduleLabel1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_scheduleLabel1, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_btnAudio1 = lv_button_create(ui_SETTINGS1);
-    lv_obj_set_width(ui_btnAudio1, 214);
-    lv_obj_set_height(ui_btnAudio1, 50);
-    lv_obj_set_x(ui_btnAudio1, 0);
-    lv_obj_set_y(ui_btnAudio1, 78);
-    lv_obj_add_flag(ui_btnAudio1, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
-    lv_obj_remove_flag(ui_btnAudio1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_radius(ui_btnAudio1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnAudio1, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_btnAudio1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(ui_btnAudio1, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_side(ui_btnAudio1, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_btnRecord = lv_button_create(ui_audioconfig);
+    lv_obj_set_width(ui_btnRecord, 214);
+    lv_obj_set_height(ui_btnRecord, 50);
+    lv_obj_set_x(ui_btnRecord, 0);
+    lv_obj_set_y(ui_btnRecord, 78);
+    lv_obj_add_flag(ui_btnRecord, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_remove_flag(ui_btnRecord, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_radius(ui_btnRecord, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnRecord, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_btnRecord, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(ui_btnRecord, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_side(ui_btnRecord, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_audioLabel1 = lv_label_create(ui_SETTINGS1);
+    ui_audioLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_audioLabel1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_audioLabel1, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_audioLabel1, 84);
+    lv_obj_set_x(ui_audioLabel1, 81);
     lv_obj_set_y(ui_audioLabel1, 109);
-    lv_label_set_text(ui_audioLabel1, "AUDIO");
+    lv_label_set_text(ui_audioLabel1, "RECORD");
     lv_obj_set_style_text_font(ui_audioLabel1, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_ImageAudio1 = lv_image_create(ui_SETTINGS1);
+    ui_ImageAudio1 = lv_image_create(ui_audioconfig);
     lv_image_set_src(ui_ImageAudio1, &ui_img_336627466);
     lv_obj_set_width(ui_ImageAudio1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_ImageAudio1, LV_SIZE_CONTENT);    /// 1
@@ -143,20 +144,20 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_add_flag(ui_ImageAudio1, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_ImageAudio1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_btnTime1 = lv_button_create(ui_SETTINGS1);
-    lv_obj_set_width(ui_btnTime1, 214);
-    lv_obj_set_height(ui_btnTime1, 50);
-    lv_obj_set_x(ui_btnTime1, 214);
-    lv_obj_set_y(ui_btnTime1, 28);
-    lv_obj_add_flag(ui_btnTime1, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
-    lv_obj_remove_flag(ui_btnTime1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_radius(ui_btnTime1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnTime1, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_btnTime1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(ui_btnTime1, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_side(ui_btnTime1, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_btnBeep = lv_button_create(ui_audioconfig);
+    lv_obj_set_width(ui_btnBeep, 214);
+    lv_obj_set_height(ui_btnBeep, 50);
+    lv_obj_set_x(ui_btnBeep, 214);
+    lv_obj_set_y(ui_btnBeep, 28);
+    lv_obj_add_flag(ui_btnBeep, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_remove_flag(ui_btnBeep, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_radius(ui_btnBeep, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnBeep, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_btnBeep, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(ui_btnBeep, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_side(ui_btnBeep, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_LabelTime1 = lv_label_create(ui_SETTINGS1);
+    ui_LabelTime1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_LabelTime1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_LabelTime1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_LabelTime1, 309);
@@ -166,29 +167,31 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_set_style_text_opa(ui_LabelTime1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_LabelTime1, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_btnInfo1 = lv_button_create(ui_SETTINGS1);
-    lv_obj_set_width(ui_btnInfo1, 214);
-    lv_obj_set_height(ui_btnInfo1, 50);
-    lv_obj_set_x(ui_btnInfo1, 214);
-    lv_obj_set_y(ui_btnInfo1, 78);
-    lv_obj_add_flag(ui_btnInfo1, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
-    lv_obj_remove_flag(ui_btnInfo1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
-    lv_obj_set_style_radius(ui_btnInfo1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnInfo1, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_opa(ui_btnInfo1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_width(ui_btnInfo1, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_border_side(ui_btnInfo1, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_btnPlay = lv_button_create(ui_audioconfig);
+    lv_obj_set_width(ui_btnPlay, 214);
+    lv_obj_set_height(ui_btnPlay, 50);
+    lv_obj_set_x(ui_btnPlay, 214);
+    lv_obj_set_y(ui_btnPlay, 78);
+    lv_obj_add_flag(ui_btnPlay, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_remove_flag(ui_btnPlay, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_radius(ui_btnPlay, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnPlay, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_btnPlay, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_width(ui_btnPlay, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_border_side(ui_btnPlay, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_LabelInfo1 = lv_label_create(ui_SETTINGS1);
+    ui_LabelInfo1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_LabelInfo1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_LabelInfo1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_LabelInfo1, 311);
     lv_obj_set_y(ui_LabelInfo1, 111);
-    lv_label_set_text(ui_LabelInfo1, "INFO");
+    lv_label_set_text(ui_LabelInfo1, "PLAY");
+    lv_obj_set_style_text_color(ui_LabelInfo1, lv_color_hex(0x616A78), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_LabelInfo1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_LabelInfo1, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_ImageInfo1 = lv_image_create(ui_SETTINGS1);
-    lv_image_set_src(ui_ImageInfo1, &ui_img_1476654543);
+    ui_ImageInfo1 = lv_image_create(ui_audioconfig);
+    lv_image_set_src(ui_ImageInfo1, &ui_img_play19x19_png);
     lv_obj_set_width(ui_ImageInfo1, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_ImageInfo1, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_ImageInfo1, 311);
@@ -196,40 +199,51 @@ void ui_SETTINGS1_screen_init(void)
     lv_obj_add_flag(ui_ImageInfo1, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_ImageInfo1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_scheduleLabel2 = lv_label_create(ui_SETTINGS1);
-    lv_obj_set_width(ui_scheduleLabel2, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_scheduleLabel2, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_scheduleLabel2, 89);
-    lv_obj_set_y(ui_scheduleLabel2, 52);
-    lv_label_set_text(ui_scheduleLabel2, "80");
-    lv_obj_set_style_text_color(ui_scheduleLabel2, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_scheduleLabel2, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_scheduleLabel2, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_volumeLabel = lv_label_create(ui_audioconfig);
+    lv_obj_set_width(ui_volumeLabel, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_volumeLabel, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_volumeLabel, 89);
+    lv_obj_set_y(ui_volumeLabel, 52);
+    lv_label_set_text(ui_volumeLabel, "80");
+    lv_obj_set_style_text_color(ui_volumeLabel, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_volumeLabel, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_volumeLabel, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    ui_beepLabel = lv_label_create(ui_audioconfig);
+    lv_obj_set_width(ui_beepLabel, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_beepLabel, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_beepLabel, 309);
+    lv_obj_set_y(ui_beepLabel, 52);
+    lv_label_set_text(ui_beepLabel, "ON");
+    lv_obj_set_style_text_color(ui_beepLabel, lv_color_hex(0x4BA32B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_beepLabel, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_beepLabel, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
 
 }
 
-void ui_SETTINGS1_screen_destroy(void)
+void ui_audioconfig_screen_destroy(void)
 {
-    if(ui_SETTINGS1) lv_obj_del(ui_SETTINGS1);
+    if(ui_audioconfig) lv_obj_del(ui_audioconfig);
 
     // NULL screen variables
-    ui_SETTINGS1 = NULL;
+    ui_audioconfig = NULL;
     ui_Panel4 = NULL;
     ui_settingLabel1 = NULL;
     ui_iconImage1 = NULL;
     ui_okLabel1 = NULL;
     ui_boxImage1 = NULL;
     ui_backLabel1 = NULL;
-    ui_btnSchedule1 = NULL;
+    ui_btnVolume = NULL;
     ui_scheduleLabel1 = NULL;
-    ui_btnAudio1 = NULL;
+    ui_btnRecord = NULL;
     ui_audioLabel1 = NULL;
     ui_ImageAudio1 = NULL;
-    ui_btnTime1 = NULL;
+    ui_btnBeep = NULL;
     ui_LabelTime1 = NULL;
-    ui_btnInfo1 = NULL;
+    ui_btnPlay = NULL;
     ui_LabelInfo1 = NULL;
     ui_ImageInfo1 = NULL;
-    ui_scheduleLabel2 = NULL;
+    ui_volumeLabel = NULL;
+    ui_beepLabel = NULL;
 
 }
