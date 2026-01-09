@@ -33,10 +33,11 @@ void ui_init(void)
     ui_home_screen_screen_init();
     ui_settings_screen_init();
     ui_audioconfig_screen_init();
-    ui_schedule_screen_init();
-    ui_editslot_screen_init();
+    ui_playback_screen_init();
     ui_info_screen_init();
-    ui_Screen1_screen_init();
+    ui_editslot_screen_init();
+    ui_editslot1_screen_init();
+    ui_schedule_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_home_screen);
 }
@@ -46,8 +47,9 @@ void ui_destroy(void)
     ui_home_screen_screen_destroy();
     ui_settings_screen_destroy();
     ui_audioconfig_screen_destroy();
-    ui_schedule_screen_destroy();
-    ui_editslot_screen_destroy();
+    ui_playback_screen_destroy();
     ui_info_screen_destroy();
-    ui_Screen1_screen_destroy();
+    ui_editslot_screen_destroy();
+    ui_editslot1_screen_destroy();
+    ui_schedule_screen_destroy();
 }

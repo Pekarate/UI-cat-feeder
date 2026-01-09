@@ -14,19 +14,29 @@ extern "C" {
 extern void ui_schedule_screen_init(void);
 extern void ui_schedule_screen_destroy(void);
 extern lv_obj_t * ui_schedule;
-extern lv_obj_t * ui_Panel5;
-extern lv_obj_t * ui_settingLabel2;
-extern lv_obj_t * ui_iconImage2;
-extern lv_obj_t * ui_okLabel2;
-extern lv_obj_t * ui_boxImage2;
-extern lv_obj_t * ui_backLabel2;
-extern lv_obj_t * ui_btnYesSchedule;
-extern lv_obj_t * ui_yesLabelSchedule;
-extern lv_obj_t * ui_Image1;
-extern lv_obj_t * ui_btnYesSchedule1;
-extern lv_obj_t * ui_Label1;
-extern lv_obj_t * ui_Image2;
-extern lv_obj_t * ui_Label2;
+extern lv_obj_t * ui_Panel19;
+extern lv_obj_t * ui_editSlotPanel2;
+extern lv_obj_t * ui_iconImage6;
+extern lv_obj_t * ui_okLabel6;
+extern lv_obj_t * ui_boxImage6;
+extern lv_obj_t * ui_backLabel6;
+extern lv_obj_t * ui_Panel20;
+extern lv_obj_t * ui_Label12;
+extern lv_obj_t * ui_Label21;
+extern lv_obj_t * ui_Label22;
+extern lv_obj_t * ui_buttonPanelSchedule;
+extern lv_obj_t * ui_btnSaveEditslot2;
+extern lv_obj_t * ui_Label8;
+extern lv_obj_t * ui_Label5;
+extern lv_obj_t * ui_Image3;
+extern lv_obj_t * ui_btnSaveEditslot3;
+extern lv_obj_t * ui_Image4;
+extern lv_obj_t * ui_Label23;
+extern lv_obj_t * ui_Label24;
+extern lv_obj_t * ui_btnSaveEditslot4;
+extern lv_obj_t * ui_Image5;
+extern lv_obj_t * ui_Label25;
+extern lv_obj_t * ui_Label26;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus
