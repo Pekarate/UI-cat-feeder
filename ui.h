@@ -49,6 +49,12 @@ LV_IMG_DECLARE(ui_img_no20x20_png);    // assets/no20x20.png
 LV_IMG_DECLARE(ui_img_yes20x20xblack_png);    // assets/yes20x20xblack.png
 LV_IMG_DECLARE(ui_img_playback_png);    // assets/PLAYBACK.png
 LV_IMG_DECLARE(ui_img_recording_png);    // assets/RECORDING.png
+LV_IMG_DECLARE(ui_img_paused_png);    // assets/PAUSED.png
+LV_IMG_DECLARE(ui_img_drawer_open_png);    // assets/drawer_open.png
+LV_IMG_DECLARE(ui_img_learning_png);    // assets/learning.png
+LV_IMG_DECLARE(ui_img_drawer_open_image_png);    // assets/drawer_open_image.png
+LV_IMG_DECLARE(ui_img_drawer_opening_png);    // assets/drawer_opening.png
+LV_IMG_DECLARE(ui_img_drawer_closing_png);    // assets/drawer_closing.png
 
 // UI INIT
 void ui_init(void);

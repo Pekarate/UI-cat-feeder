@@ -6,7 +6,11 @@
 #include "../ui.h"
 
 lv_obj_t * ui_recordingImage = NULL;
-lv_obj_t * ui_Image4 = NULL;
+lv_obj_t * ui_drawerOpen = NULL;
+lv_obj_t * ui_learningAddcard = NULL;
+lv_obj_t * ui_drawerOpenImage = NULL;
+lv_obj_t * ui_draweropening = NULL;
+lv_obj_t * ui_drawerclosing = NULL;
 // event funtions
 
 // build funtions
@@ -16,12 +20,40 @@ void ui_recordingImage_screen_init(void)
     ui_recordingImage = lv_obj_create(NULL);
     lv_obj_remove_flag(ui_recordingImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Image4 = lv_image_create(ui_recordingImage);
-    lv_image_set_src(ui_Image4, &ui_img_recording_png);
-    lv_obj_set_width(ui_Image4, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_Image4, LV_SIZE_CONTENT);    /// 1
-    lv_obj_add_flag(ui_Image4, LV_OBJ_FLAG_CLICKABLE);     /// Flags
-    lv_obj_remove_flag(ui_Image4, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    ui_drawerOpen = lv_image_create(ui_recordingImage);
+    lv_image_set_src(ui_drawerOpen, &ui_img_drawer_open_png);
+    lv_obj_set_width(ui_drawerOpen, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_drawerOpen, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_drawerOpen, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_drawerOpen, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_learningAddcard = lv_image_create(ui_recordingImage);
+    lv_image_set_src(ui_learningAddcard, &ui_img_learning_png);
+    lv_obj_set_width(ui_learningAddcard, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_learningAddcard, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_learningAddcard, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_learningAddcard, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_drawerOpenImage = lv_image_create(ui_recordingImage);
+    lv_image_set_src(ui_drawerOpenImage, &ui_img_drawer_open_image_png);
+    lv_obj_set_width(ui_drawerOpenImage, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_drawerOpenImage, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_drawerOpenImage, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_drawerOpenImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_draweropening = lv_image_create(ui_recordingImage);
+    lv_image_set_src(ui_draweropening, &ui_img_drawer_opening_png);
+    lv_obj_set_width(ui_draweropening, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_draweropening, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_draweropening, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_draweropening, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_drawerclosing = lv_image_create(ui_recordingImage);
+    lv_image_set_src(ui_drawerclosing, &ui_img_drawer_closing_png);
+    lv_obj_set_width(ui_drawerclosing, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_drawerclosing, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_drawerclosing, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_drawerclosing, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
 }
 
@@ -31,6 +63,10 @@ void ui_recordingImage_screen_destroy(void)
 
     // NULL screen variables
     ui_recordingImage = NULL;
-    ui_Image4 = NULL;
+    ui_drawerOpen = NULL;
+    ui_learningAddcard = NULL;
+    ui_drawerOpenImage = NULL;
+    ui_draweropening = NULL;
+    ui_drawerclosing = NULL;
 
 }

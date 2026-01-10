@@ -14,7 +14,9 @@ extern "C" {
 extern void ui_playbackImage_screen_init(void);
 extern void ui_playbackImage_screen_destroy(void);
 extern lv_obj_t * ui_playbackImage;
-extern lv_obj_t * ui_Image3;
+extern lv_obj_t * ui_playingImage;
+extern lv_obj_t * ui_recordImage;
+extern lv_obj_t * ui_pausedImage;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

@@ -6,7 +6,9 @@
 #include "../ui.h"
 
 lv_obj_t * ui_playbackImage = NULL;
-lv_obj_t * ui_Image3 = NULL;
+lv_obj_t * ui_playingImage = NULL;
+lv_obj_t * ui_recordImage = NULL;
+lv_obj_t * ui_pausedImage = NULL;
 // event funtions
 
 // build funtions
@@ -16,12 +18,26 @@ void ui_playbackImage_screen_init(void)
     ui_playbackImage = lv_obj_create(NULL);
     lv_obj_remove_flag(ui_playbackImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Image3 = lv_image_create(ui_playbackImage);
-    lv_image_set_src(ui_Image3, &ui_img_playback_png);
-    lv_obj_set_width(ui_Image3, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_Image3, LV_SIZE_CONTENT);    /// 1
-    lv_obj_add_flag(ui_Image3, LV_OBJ_FLAG_CLICKABLE);     /// Flags
-    lv_obj_remove_flag(ui_Image3, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    ui_playingImage = lv_image_create(ui_playbackImage);
+    lv_image_set_src(ui_playingImage, &ui_img_playback_png);
+    lv_obj_set_width(ui_playingImage, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_playingImage, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_playingImage, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_playingImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_recordImage = lv_image_create(ui_playbackImage);
+    lv_image_set_src(ui_recordImage, &ui_img_recording_png);
+    lv_obj_set_width(ui_recordImage, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_recordImage, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_recordImage, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_recordImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_pausedImage = lv_image_create(ui_playbackImage);
+    lv_image_set_src(ui_pausedImage, &ui_img_paused_png);
+    lv_obj_set_width(ui_pausedImage, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_pausedImage, LV_SIZE_CONTENT);    /// 1
+    lv_obj_add_flag(ui_pausedImage, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_pausedImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
 }
 
@@ -31,6 +47,8 @@ void ui_playbackImage_screen_destroy(void)
 
     // NULL screen variables
     ui_playbackImage = NULL;
-    ui_Image3 = NULL;
+    ui_playingImage = NULL;
+    ui_recordImage = NULL;
+    ui_pausedImage = NULL;
 
 }

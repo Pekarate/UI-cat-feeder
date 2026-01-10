@@ -14,7 +14,11 @@ extern "C" {
 extern void ui_recordingImage_screen_init(void);
 extern void ui_recordingImage_screen_destroy(void);
 extern lv_obj_t * ui_recordingImage;
-extern lv_obj_t * ui_Image4;
+extern lv_obj_t * ui_drawerOpen;
+extern lv_obj_t * ui_learningAddcard;
+extern lv_obj_t * ui_drawerOpenImage;
+extern lv_obj_t * ui_draweropening;
+extern lv_obj_t * ui_drawerclosing;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

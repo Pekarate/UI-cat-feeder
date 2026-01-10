@@ -22,6 +22,12 @@ SET(SOURCES screens/ui_home_screen.c
     images/ui_img_no20x20_png.c
     images/ui_img_yes20x20xblack_png.c
     images/ui_img_playback_png.c
-    images/ui_img_recording_png.c)
+    images/ui_img_recording_png.c
+    images/ui_img_paused_png.c
+    images/ui_img_drawer_open_png.c
+    images/ui_img_learning_png.c
+    images/ui_img_drawer_open_image_png.c
+    images/ui_img_drawer_opening_png.c
+    images/ui_img_drawer_closing_png.c)
 
 add_library(ui ${SOURCES})
