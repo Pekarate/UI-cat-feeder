@@ -94,7 +94,7 @@ void ui_schedule_screen_init(void)
     lv_obj_set_width(ui_backLabel6, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_backLabel6, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_backLabel6, 311);
-    lv_obj_set_y(ui_backLabel6, 8);
+    lv_obj_set_y(ui_backLabel6, 7);
     lv_label_set_text(ui_backLabel6, "BACK (OPEN)");
     lv_obj_set_style_text_color(ui_backLabel6, lv_color_hex(0xFF0000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_backLabel6, 255, LV_PART_MAIN | LV_STATE_DEFAULT);

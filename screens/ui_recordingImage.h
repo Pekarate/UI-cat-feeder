@@ -3,16 +3,16 @@
 // LVGL version: 9.2.2
 // Project name: SquareLine_Project
 
-#ifndef UI_SCREEN2_H
-#define UI_SCREEN2_H
+#ifndef UI_RECORDINGIMAGE_H
+#define UI_RECORDINGIMAGE_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-// SCREEN: ui_Screen2
-extern void ui_Screen2_screen_init(void);
-extern void ui_Screen2_screen_destroy(void);
+// SCREEN: ui_recordingImage
+extern void ui_recordingImage_screen_init(void);
+extern void ui_recordingImage_screen_destroy(void);
 extern lv_obj_t * ui_recordingImage;
 extern lv_obj_t * ui_Image4;
 // CUSTOM VARIABLES

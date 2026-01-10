@@ -27,7 +27,7 @@ extern "C" {
 #include "screens/ui_editslot1.h"
 #include "screens/ui_schedule.h"
 #include "screens/ui_playbackImage.h"
-#include "screens/ui_Screen2.h"
+#include "screens/ui_recordingImage.h"
 
 ///////////////////// VARIABLES ////////////////////
 
