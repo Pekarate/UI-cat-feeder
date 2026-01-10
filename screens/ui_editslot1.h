@@ -23,7 +23,7 @@ extern lv_obj_t * ui_backLabel3;
 extern lv_obj_t * ui_btnSaveEditslot1;
 extern lv_obj_t * ui_HourLabelEditslot1;
 extern lv_obj_t * ui_Panel8;
-extern lv_obj_t * ui_MonthLabelEditslot1;
+extern lv_obj_t * ui_amtLabelEditslot1;
 extern lv_obj_t * ui_Panel9;
 extern lv_obj_t * ui_DateLabelEditslot1;
 extern lv_obj_t * ui_Label13;
@@ -31,7 +31,7 @@ extern lv_obj_t * ui_Label14;
 extern lv_obj_t * ui_MinLabelEditslot1;
 extern lv_obj_t * ui_Panel7;
 extern lv_obj_t * ui_Label10;
-extern lv_obj_t * ui_actLabelEditslot;
+extern lv_obj_t * ui_actLabelEditslot1;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

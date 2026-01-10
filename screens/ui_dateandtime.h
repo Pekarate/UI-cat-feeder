@@ -3,17 +3,17 @@
 // LVGL version: 9.2.2
 // Project name: SquareLine_Project
 
-#ifndef UI_EDITSLOT_H
-#define UI_EDITSLOT_H
+#ifndef UI_DATEANDTIME_H
+#define UI_DATEANDTIME_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-// SCREEN: ui_editslot
-extern void ui_editslot_screen_init(void);
-extern void ui_editslot_screen_destroy(void);
-extern lv_obj_t * ui_editslot;
+// SCREEN: ui_dateandtime
+extern void ui_dateandtime_screen_init(void);
+extern void ui_dateandtime_screen_destroy(void);
+extern lv_obj_t * ui_dateandtime;
 extern lv_obj_t * ui_Panel15;
 extern lv_obj_t * ui_editSlotPanel;
 extern lv_obj_t * ui_iconImage5;

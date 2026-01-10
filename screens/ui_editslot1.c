@@ -15,7 +15,7 @@ lv_obj_t * ui_backLabel3 = NULL;
 lv_obj_t * ui_btnSaveEditslot1 = NULL;
 lv_obj_t * ui_HourLabelEditslot1 = NULL;
 lv_obj_t * ui_Panel8 = NULL;
-lv_obj_t * ui_MonthLabelEditslot1 = NULL;
+lv_obj_t * ui_amtLabelEditslot1 = NULL;
 lv_obj_t * ui_Panel9 = NULL;
 lv_obj_t * ui_DateLabelEditslot1 = NULL;
 lv_obj_t * ui_Label13 = NULL;
@@ -23,7 +23,7 @@ lv_obj_t * ui_Label14 = NULL;
 lv_obj_t * ui_MinLabelEditslot1 = NULL;
 lv_obj_t * ui_Panel7 = NULL;
 lv_obj_t * ui_Label10 = NULL;
-lv_obj_t * ui_actLabelEditslot = NULL;
+lv_obj_t * ui_actLabelEditslot1 = NULL;
 // event funtions
 
 // build funtions
@@ -129,15 +129,15 @@ void ui_editslot1_screen_init(void)
     lv_obj_set_style_border_opa(ui_Panel8, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_Panel8, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_MonthLabelEditslot1 = lv_label_create(ui_editslot1);
-    lv_obj_set_width(ui_MonthLabelEditslot1, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_MonthLabelEditslot1, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_MonthLabelEditslot1, 360);
-    lv_obj_set_y(ui_MonthLabelEditslot1, 45);
-    lv_label_set_text(ui_MonthLabelEditslot1, "01");
-    lv_obj_set_style_text_color(ui_MonthLabelEditslot1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_MonthLabelEditslot1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_MonthLabelEditslot1, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_amtLabelEditslot1 = lv_label_create(ui_editslot1);
+    lv_obj_set_width(ui_amtLabelEditslot1, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_amtLabelEditslot1, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_amtLabelEditslot1, 360);
+    lv_obj_set_y(ui_amtLabelEditslot1, 45);
+    lv_label_set_text(ui_amtLabelEditslot1, "01");
+    lv_obj_set_style_text_color(ui_amtLabelEditslot1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_amtLabelEditslot1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_amtLabelEditslot1, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Panel9 = lv_obj_create(ui_editslot1);
     lv_obj_set_width(ui_Panel9, 232);
@@ -213,15 +213,15 @@ void ui_editslot1_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label10, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label10, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_actLabelEditslot = lv_label_create(ui_editslot1);
-    lv_obj_set_width(ui_actLabelEditslot, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_actLabelEditslot, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_actLabelEditslot, 357);
-    lv_obj_set_y(ui_actLabelEditslot, 82);
-    lv_label_set_text(ui_actLabelEditslot, "OFF");
-    lv_obj_set_style_text_color(ui_actLabelEditslot, lv_color_hex(0xFC0000), LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_opa(ui_actLabelEditslot, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_actLabelEditslot, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_actLabelEditslot1 = lv_label_create(ui_editslot1);
+    lv_obj_set_width(ui_actLabelEditslot1, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_actLabelEditslot1, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_actLabelEditslot1, 357);
+    lv_obj_set_y(ui_actLabelEditslot1, 82);
+    lv_label_set_text(ui_actLabelEditslot1, "OFF");
+    lv_obj_set_style_text_color(ui_actLabelEditslot1, lv_color_hex(0xFC0000), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_actLabelEditslot1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_actLabelEditslot1, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
 }
 
@@ -240,7 +240,7 @@ void ui_editslot1_screen_destroy(void)
     ui_btnSaveEditslot1 = NULL;
     ui_HourLabelEditslot1 = NULL;
     ui_Panel8 = NULL;
-    ui_MonthLabelEditslot1 = NULL;
+    ui_amtLabelEditslot1 = NULL;
     ui_Panel9 = NULL;
     ui_DateLabelEditslot1 = NULL;
     ui_Label13 = NULL;
@@ -248,6 +248,6 @@ void ui_editslot1_screen_destroy(void)
     ui_MinLabelEditslot1 = NULL;
     ui_Panel7 = NULL;
     ui_Label10 = NULL;
-    ui_actLabelEditslot = NULL;
+    ui_actLabelEditslot1 = NULL;
 
 }

@@ -25,18 +25,22 @@ extern lv_obj_t * ui_Label12;
 extern lv_obj_t * ui_Label21;
 extern lv_obj_t * ui_Label22;
 extern lv_obj_t * ui_buttonPanelSchedule;
-extern lv_obj_t * ui_btnSaveEditslot2;
-extern lv_obj_t * ui_Label8;
-extern lv_obj_t * ui_Label5;
-extern lv_obj_t * ui_Image3;
-extern lv_obj_t * ui_btnSaveEditslot3;
-extern lv_obj_t * ui_Image4;
-extern lv_obj_t * ui_Label23;
-extern lv_obj_t * ui_Label24;
-extern lv_obj_t * ui_btnSaveEditslot4;
-extern lv_obj_t * ui_Image5;
-extern lv_obj_t * ui_Label25;
-extern lv_obj_t * ui_Label26;
+extern lv_obj_t * ui_btnoption1Schedule;
+extern lv_obj_t * ui_labeltime1Schedule;
+extern lv_obj_t * ui_labelamt1Schedule;
+extern lv_obj_t * ui_imageon1Schedule;
+extern lv_obj_t * ui_btnoption2Schedule;
+extern lv_obj_t * ui_imageon2Schedule;
+extern lv_obj_t * ui_labelamt2Schedule;
+extern lv_obj_t * ui_labeltime2Schedule;
+extern lv_obj_t * ui_btnoption3Schedule;
+extern lv_obj_t * ui_imageon3Schedule;
+extern lv_obj_t * ui_labeltime3Schedule;
+extern lv_obj_t * ui_labelamt3Schedule;
+extern lv_obj_t * ui_btnoption4Schedule;
+extern lv_obj_t * ui_imageon4Schedule;
+extern lv_obj_t * ui_labeltime4Schedule;
+extern lv_obj_t * ui_labelamt4Schedule;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

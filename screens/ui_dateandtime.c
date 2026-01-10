@@ -5,7 +5,7 @@
 
 #include "../ui.h"
 
-lv_obj_t * ui_editslot = NULL;
+lv_obj_t * ui_dateandtime = NULL;
 lv_obj_t * ui_Panel15 = NULL;
 lv_obj_t * ui_editSlotPanel = NULL;
 lv_obj_t * ui_iconImage5 = NULL;
@@ -31,12 +31,12 @@ lv_obj_t * ui_MinLabelEditslot = NULL;
 
 // build funtions
 
-void ui_editslot_screen_init(void)
+void ui_dateandtime_screen_init(void)
 {
-    ui_editslot = lv_obj_create(NULL);
-    lv_obj_remove_flag(ui_editslot, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    ui_dateandtime = lv_obj_create(NULL);
+    lv_obj_remove_flag(ui_dateandtime, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_Panel15 = lv_obj_create(ui_editslot);
+    ui_Panel15 = lv_obj_create(ui_dateandtime);
     lv_obj_set_width(ui_Panel15, 428);
     lv_obj_set_height(ui_Panel15, 30);
     lv_obj_remove_flag(ui_Panel15, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -46,7 +46,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_border_color(ui_Panel15, lv_color_hex(0x0F172A), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_Panel15, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_editSlotPanel = lv_label_create(ui_editslot);
+    ui_editSlotPanel = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_editSlotPanel, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_editSlotPanel, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_editSlotPanel, 183);
@@ -56,7 +56,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_editSlotPanel, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_editSlotPanel, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_iconImage5 = lv_image_create(ui_editslot);
+    ui_iconImage5 = lv_image_create(ui_dateandtime);
     lv_image_set_src(ui_iconImage5, &ui_img_1388130735);
     lv_obj_set_width(ui_iconImage5, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_iconImage5, LV_SIZE_CONTENT);    /// 1
@@ -65,7 +65,7 @@ void ui_editslot_screen_init(void)
     lv_obj_add_flag(ui_iconImage5, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_iconImage5, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_okLabel5 = lv_label_create(ui_editslot);
+    ui_okLabel5 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_okLabel5, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_okLabel5, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_okLabel5, 30);
@@ -75,7 +75,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_okLabel5, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_okLabel5, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_boxImage5 = lv_image_create(ui_editslot);
+    ui_boxImage5 = lv_image_create(ui_dateandtime);
     lv_image_set_src(ui_boxImage5, &ui_img_1649062918);
     lv_obj_set_width(ui_boxImage5, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_boxImage5, LV_SIZE_CONTENT);    /// 1
@@ -84,7 +84,7 @@ void ui_editslot_screen_init(void)
     lv_obj_add_flag(ui_boxImage5, LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_boxImage5, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
-    ui_backLabel5 = lv_label_create(ui_editslot);
+    ui_backLabel5 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_backLabel5, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_backLabel5, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_backLabel5, 311);
@@ -94,7 +94,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_backLabel5, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_backLabel5, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_btnSaveEditslot = lv_button_create(ui_editslot);
+    ui_btnSaveEditslot = lv_button_create(ui_dateandtime);
     lv_obj_set_width(ui_btnSaveEditslot, 428);
     lv_obj_set_height(ui_btnSaveEditslot, 25);
     lv_obj_set_x(ui_btnSaveEditslot, 0);
@@ -109,7 +109,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_border_width(ui_btnSaveEditslot, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_side(ui_btnSaveEditslot, LV_BORDER_SIDE_TOP, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_HourLabelEditslot = lv_label_create(ui_editslot);
+    ui_HourLabelEditslot = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_HourLabelEditslot, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_HourLabelEditslot, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_HourLabelEditslot, 181);
@@ -119,7 +119,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_HourLabelEditslot, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_HourLabelEditslot, &lv_font_montserrat_22, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label15 = lv_label_create(ui_editslot);
+    ui_Label15 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_Label15, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label15, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label15, 67);
@@ -129,7 +129,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label15, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label15, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Panel16 = lv_obj_create(ui_editslot);
+    ui_Panel16 = lv_obj_create(ui_dateandtime);
     lv_obj_set_width(ui_Panel16, 97);
     lv_obj_set_height(ui_Panel16, 31);
     lv_obj_set_x(ui_Panel16, 32);
@@ -142,7 +142,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_border_opa(ui_Panel16, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_Panel16, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_YearLabelEditslot = lv_label_create(ui_editslot);
+    ui_YearLabelEditslot = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_YearLabelEditslot, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_YearLabelEditslot, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_YearLabelEditslot, 67);
@@ -152,7 +152,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_YearLabelEditslot, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_YearLabelEditslot, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label16 = lv_label_create(ui_editslot);
+    ui_Label16 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_Label16, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label16, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label16, 69);
@@ -162,7 +162,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label16, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label16, &lv_font_montserrat_8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Panel17 = lv_obj_create(ui_editslot);
+    ui_Panel17 = lv_obj_create(ui_dateandtime);
     lv_obj_set_width(ui_Panel17, 97);
     lv_obj_set_height(ui_Panel17, 31);
     lv_obj_set_x(ui_Panel17, 171);
@@ -175,7 +175,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_border_opa(ui_Panel17, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_Panel17, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_MonthLabelEditslot = lv_label_create(ui_editslot);
+    ui_MonthLabelEditslot = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_MonthLabelEditslot, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_MonthLabelEditslot, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_MonthLabelEditslot, 214);
@@ -185,7 +185,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_MonthLabelEditslot, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_MonthLabelEditslot, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label17 = lv_label_create(ui_editslot);
+    ui_Label17 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_Label17, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label17, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label17, 212);
@@ -195,7 +195,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label17, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label17, &lv_font_montserrat_8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Panel18 = lv_obj_create(ui_editslot);
+    ui_Panel18 = lv_obj_create(ui_dateandtime);
     lv_obj_set_width(ui_Panel18, 97);
     lv_obj_set_height(ui_Panel18, 31);
     lv_obj_set_x(ui_Panel18, 310);
@@ -208,7 +208,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_border_opa(ui_Panel18, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_Panel18, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_DateLabelEditslot = lv_label_create(ui_editslot);
+    ui_DateLabelEditslot = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_DateLabelEditslot, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_DateLabelEditslot, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_DateLabelEditslot, 355);
@@ -218,7 +218,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_DateLabelEditslot, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_DateLabelEditslot, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label18 = lv_label_create(ui_editslot);
+    ui_Label18 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_Label18, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label18, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label18, 353);
@@ -228,7 +228,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label18, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label18, &lv_font_montserrat_8, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label19 = lv_label_create(ui_editslot);
+    ui_Label19 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_Label19, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label19, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label19, 194);
@@ -238,7 +238,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label19, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label19, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_Label20 = lv_label_create(ui_editslot);
+    ui_Label20 = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_Label20, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label20, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label20, 214);
@@ -248,7 +248,7 @@ void ui_editslot_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label20, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label20, &lv_font_montserrat_22, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_MinLabelEditslot = lv_label_create(ui_editslot);
+    ui_MinLabelEditslot = lv_label_create(ui_dateandtime);
     lv_obj_set_width(ui_MinLabelEditslot, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_MinLabelEditslot, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_MinLabelEditslot, 227);
@@ -260,12 +260,12 @@ void ui_editslot_screen_init(void)
 
 }
 
-void ui_editslot_screen_destroy(void)
+void ui_dateandtime_screen_destroy(void)
 {
-    if(ui_editslot) lv_obj_del(ui_editslot);
+    if(ui_dateandtime) lv_obj_del(ui_dateandtime);
 
     // NULL screen variables
-    ui_editslot = NULL;
+    ui_dateandtime = NULL;
     ui_Panel15 = NULL;
     ui_editSlotPanel = NULL;
     ui_iconImage5 = NULL;

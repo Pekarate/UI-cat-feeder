@@ -34,7 +34,7 @@ void ui_home_screen_screen_init(void)
     lv_obj_set_width(ui_Panel1, 2);
     lv_obj_set_height(ui_Panel1, 118);
     lv_obj_set_x(ui_Panel1, 212);
-    lv_obj_set_y(ui_Panel1, 5);
+    lv_obj_set_y(ui_Panel1, 11);
     lv_obj_remove_flag(ui_Panel1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_Panel1, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_Panel1, lv_color_hex(0xEFF2F7), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -43,8 +43,8 @@ void ui_home_screen_screen_init(void)
     ui_cur_time = lv_label_create(ui_home_screen);
     lv_obj_set_width(ui_cur_time, LV_SIZE_CONTENT);   /// 150
     lv_obj_set_height(ui_cur_time, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_cur_time, 46);
-    lv_obj_set_y(ui_cur_time, 25);
+    lv_obj_set_x(ui_cur_time, 47);
+    lv_obj_set_y(ui_cur_time, 32);
     lv_label_set_text(ui_cur_time, "10:05");
     lv_obj_set_style_text_color(ui_cur_time, lv_color_hex(0x0F172A), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_cur_time, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -54,7 +54,7 @@ void ui_home_screen_screen_init(void)
     lv_obj_set_width(ui_cur_date, LV_SIZE_CONTENT);   /// 150
     lv_obj_set_height(ui_cur_date, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_cur_date, 40);
-    lv_obj_set_y(ui_cur_date, 79);
+    lv_obj_set_y(ui_cur_date, 89);
     lv_label_set_text(ui_cur_date, "FRI, 02 JAN 2026");
     lv_obj_set_style_text_color(ui_cur_date, lv_color_hex(0x6F7E93), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_cur_date, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -114,8 +114,8 @@ void ui_home_screen_screen_init(void)
     ui_Label6 = lv_label_create(ui_home_screen);
     lv_obj_set_width(ui_Label6, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label6, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label6, 160);
-    lv_obj_set_y(ui_Label6, 53);
+    lv_obj_set_x(ui_Label6, 158);
+    lv_obj_set_y(ui_Label6, 55);
     lv_obj_set_align(ui_Label6, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label6, "SYSTEM READY");
     lv_obj_set_style_text_color(ui_Label6, lv_color_hex(0x1FA751), LV_PART_MAIN | LV_STATE_DEFAULT);
