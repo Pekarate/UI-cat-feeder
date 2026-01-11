@@ -29,14 +29,14 @@ void ui_playbackImage_screen_init(void)
     lv_image_set_src(ui_recordImage, &ui_img_recording_png);
     lv_obj_set_width(ui_recordImage, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_recordImage, LV_SIZE_CONTENT);    /// 1
-    lv_obj_add_flag(ui_recordImage, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_add_flag(ui_recordImage, LV_OBJ_FLAG_HIDDEN | LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_recordImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_pausedImage = lv_image_create(ui_playbackImage);
     lv_image_set_src(ui_pausedImage, &ui_img_paused_png);
     lv_obj_set_width(ui_pausedImage, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_pausedImage, LV_SIZE_CONTENT);    /// 1
-    lv_obj_add_flag(ui_pausedImage, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_add_flag(ui_pausedImage, LV_OBJ_FLAG_HIDDEN | LV_OBJ_FLAG_CLICKABLE);     /// Flags
     lv_obj_remove_flag(ui_pausedImage, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
 }

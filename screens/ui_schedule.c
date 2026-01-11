@@ -20,7 +20,7 @@ lv_obj_t * ui_buttonPanelSchedule = NULL;
 lv_obj_t * ui_btnoption1Schedule = NULL;
 lv_obj_t * ui_labeltime1Schedule = NULL;
 lv_obj_t * ui_labelamt1Schedule = NULL;
-lv_obj_t * ui_imageon1Schedule = NULL;
+lv_obj_t * ui_imageon1Schedule1 = NULL;
 lv_obj_t * ui_btnoption2Schedule = NULL;
 lv_obj_t * ui_imageon2Schedule = NULL;
 lv_obj_t * ui_labelamt2Schedule = NULL;
@@ -148,7 +148,6 @@ void ui_schedule_screen_init(void)
     lv_obj_set_height(ui_buttonPanelSchedule, 82);
     lv_obj_set_x(ui_buttonPanelSchedule, 0);
     lv_obj_set_y(ui_buttonPanelSchedule, 60);
-    lv_obj_remove_flag(ui_buttonPanelSchedule, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_buttonPanelSchedule, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_buttonPanelSchedule, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_buttonPanelSchedule, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -162,10 +161,11 @@ void ui_schedule_screen_init(void)
     lv_obj_set_x(ui_btnoption1Schedule, 0);
     lv_obj_set_y(ui_btnoption1Schedule, -15);
     lv_obj_set_align(ui_btnoption1Schedule, LV_ALIGN_TOP_MID);
+    lv_obj_add_state(ui_btnoption1Schedule, LV_STATE_CHECKED);       /// States
     lv_obj_add_flag(ui_btnoption1Schedule, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_remove_flag(ui_btnoption1Schedule, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_btnoption1Schedule, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnoption1Schedule, lv_color_hex(0x2563EB), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnoption1Schedule, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_btnoption1Schedule, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(ui_btnoption1Schedule, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_btnoption1Schedule, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -178,7 +178,7 @@ void ui_schedule_screen_init(void)
     lv_obj_set_x(ui_labeltime1Schedule, 181);
     lv_obj_set_y(ui_labeltime1Schedule, -5);
     lv_label_set_text(ui_labeltime1Schedule, "07:00");
-    lv_obj_set_style_text_color(ui_labeltime1Schedule, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui_labeltime1Schedule, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_labeltime1Schedule, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_labeltime1Schedule, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -188,18 +188,18 @@ void ui_schedule_screen_init(void)
     lv_obj_set_x(ui_labelamt1Schedule, 357);
     lv_obj_set_y(ui_labelamt1Schedule, -5);
     lv_label_set_text(ui_labelamt1Schedule, "1/2");
-    lv_obj_set_style_text_color(ui_labelamt1Schedule, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui_labelamt1Schedule, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_labelamt1Schedule, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_labelamt1Schedule, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_imageon1Schedule = lv_image_create(ui_btnoption1Schedule);
-    lv_image_set_src(ui_imageon1Schedule, &ui_img_yes20x20_png);
-    lv_obj_set_width(ui_imageon1Schedule, LV_SIZE_CONTENT);   /// 1
-    lv_obj_set_height(ui_imageon1Schedule, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_imageon1Schedule, 9);
-    lv_obj_set_y(ui_imageon1Schedule, -8);
-    lv_obj_add_flag(ui_imageon1Schedule, LV_OBJ_FLAG_CLICKABLE);     /// Flags
-    lv_obj_remove_flag(ui_imageon1Schedule, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    ui_imageon1Schedule1 = lv_image_create(ui_btnoption1Schedule);
+    lv_image_set_src(ui_imageon1Schedule1, &ui_img_yes20x20xblack_png);
+    lv_obj_set_width(ui_imageon1Schedule1, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_imageon1Schedule1, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_imageon1Schedule1, 9);
+    lv_obj_set_y(ui_imageon1Schedule1, -8);
+    lv_obj_add_flag(ui_imageon1Schedule1, LV_OBJ_FLAG_CLICKABLE);     /// Flags
+    lv_obj_remove_flag(ui_imageon1Schedule1, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_btnoption2Schedule = lv_button_create(ui_buttonPanelSchedule);
     lv_obj_set_width(ui_btnoption2Schedule, 428);
@@ -358,7 +358,7 @@ void ui_schedule_screen_destroy(void)
     ui_btnoption1Schedule = NULL;
     ui_labeltime1Schedule = NULL;
     ui_labelamt1Schedule = NULL;
-    ui_imageon1Schedule = NULL;
+    ui_imageon1Schedule1 = NULL;
     ui_btnoption2Schedule = NULL;
     ui_imageon2Schedule = NULL;
     ui_labelamt2Schedule = NULL;

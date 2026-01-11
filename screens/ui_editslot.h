@@ -3,17 +3,17 @@
 // LVGL version: 9.2.2
 // Project name: SquareLine_Project
 
-#ifndef UI_EDITSLOT1_H
-#define UI_EDITSLOT1_H
+#ifndef UI_EDITSLOT_H
+#define UI_EDITSLOT_H
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
-// SCREEN: ui_editslot1
-extern void ui_editslot1_screen_init(void);
-extern void ui_editslot1_screen_destroy(void);
-extern lv_obj_t * ui_editslot1;
+// SCREEN: ui_editslot
+extern void ui_editslot_screen_init(void);
+extern void ui_editslot_screen_destroy(void);
+extern lv_obj_t * ui_editslot;
 extern lv_obj_t * ui_Panel6;
 extern lv_obj_t * ui_editSlotPanel1;
 extern lv_obj_t * ui_iconImage3;
@@ -21,17 +21,19 @@ extern lv_obj_t * ui_okLabel3;
 extern lv_obj_t * ui_boxImage3;
 extern lv_obj_t * ui_backLabel3;
 extern lv_obj_t * ui_btnSaveEditslot1;
-extern lv_obj_t * ui_HourLabelEditslot1;
-extern lv_obj_t * ui_Panel8;
-extern lv_obj_t * ui_amtLabelEditslot1;
-extern lv_obj_t * ui_Panel9;
-extern lv_obj_t * ui_DateLabelEditslot1;
 extern lv_obj_t * ui_Label13;
+extern lv_obj_t * ui_Panel_amt;
+extern lv_obj_t * ui_amtLabelEditslot1;
+extern lv_obj_t * ui_Panel_act;
+extern lv_obj_t * ui_actLabelEditslot1;
+extern lv_obj_t * ui_DateLabelEditslot1;
 extern lv_obj_t * ui_Label14;
-extern lv_obj_t * ui_MinLabelEditslot1;
 extern lv_obj_t * ui_Panel7;
 extern lv_obj_t * ui_Label10;
-extern lv_obj_t * ui_actLabelEditslot1;
+extern lv_obj_t * ui_panel_hour;
+extern lv_obj_t * ui_HourLabelEditslot1;
+extern lv_obj_t * ui_Panel_min;
+extern lv_obj_t * ui_MinLabelEditslot1;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

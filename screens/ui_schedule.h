@@ -28,7 +28,7 @@ extern lv_obj_t * ui_buttonPanelSchedule;
 extern lv_obj_t * ui_btnoption1Schedule;
 extern lv_obj_t * ui_labeltime1Schedule;
 extern lv_obj_t * ui_labelamt1Schedule;
-extern lv_obj_t * ui_imageon1Schedule;
+extern lv_obj_t * ui_imageon1Schedule1;
 extern lv_obj_t * ui_btnoption2Schedule;
 extern lv_obj_t * ui_imageon2Schedule;
 extern lv_obj_t * ui_labelamt2Schedule;

@@ -21,20 +21,23 @@ extern lv_obj_t * ui_okLabel5;
 extern lv_obj_t * ui_boxImage5;
 extern lv_obj_t * ui_backLabel5;
 extern lv_obj_t * ui_btnSaveEditslot;
-extern lv_obj_t * ui_HourLabelEditslot;
-extern lv_obj_t * ui_Label15;
-extern lv_obj_t * ui_Panel16;
+extern lv_obj_t * ui_Panel_year;
 extern lv_obj_t * ui_YearLabelEditslot;
 extern lv_obj_t * ui_Label16;
-extern lv_obj_t * ui_Panel17;
+extern lv_obj_t * ui_Panel_month;
 extern lv_obj_t * ui_MonthLabelEditslot;
 extern lv_obj_t * ui_Label17;
-extern lv_obj_t * ui_Panel18;
+extern lv_obj_t * ui_Panel_date;
 extern lv_obj_t * ui_DateLabelEditslot;
 extern lv_obj_t * ui_Label18;
 extern lv_obj_t * ui_Label19;
 extern lv_obj_t * ui_Label20;
+extern lv_obj_t * ui_Panel_hour_date_time;
+extern lv_obj_t * ui_HourLabelEditslot;
+extern lv_obj_t * ui_Panel_min_date_time;
 extern lv_obj_t * ui_MinLabelEditslot;
+extern lv_obj_t * ui_Panel_second_date_time1;
+extern lv_obj_t * ui_secondLabelEditslot2;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

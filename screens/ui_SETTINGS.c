@@ -113,10 +113,11 @@ void ui_settings_screen_init(void)
     lv_obj_set_height(ui_btnSchedule, 56);
     lv_obj_set_x(ui_btnSchedule, 0);
     lv_obj_set_y(ui_btnSchedule, 30);
+    lv_obj_add_state(ui_btnSchedule, LV_STATE_CHECKED);       /// States
     lv_obj_add_flag(ui_btnSchedule, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_remove_flag(ui_btnSchedule, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_btnSchedule, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnSchedule, lv_color_hex(0xEFF6FF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnSchedule, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_btnSchedule, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_btnSchedule, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_side(ui_btnSchedule, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);

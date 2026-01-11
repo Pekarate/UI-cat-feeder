@@ -96,13 +96,16 @@ void ui_audioconfig_screen_init(void)
     lv_obj_set_height(ui_btnVolume, 56);
     lv_obj_set_x(ui_btnVolume, 0);
     lv_obj_set_y(ui_btnVolume, 30);
+    lv_obj_add_state(ui_btnVolume, LV_STATE_CHECKED);       /// States
     lv_obj_add_flag(ui_btnVolume, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_remove_flag(ui_btnVolume, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_btnVolume, 0, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_btnVolume, lv_color_hex(0xEFF6FF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnVolume, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_btnVolume, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_btnVolume, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_side(ui_btnVolume, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnVolume, lv_color_hex(0x4CD852), LV_PART_MAIN | LV_STATE_FOCUSED);
+    lv_obj_set_style_bg_opa(ui_btnVolume, 255, LV_PART_MAIN | LV_STATE_FOCUSED);
 
     ui_scheduleLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_scheduleLabel1, LV_SIZE_CONTENT);   /// 1
@@ -126,6 +129,8 @@ void ui_audioconfig_screen_init(void)
     lv_obj_set_style_bg_opa(ui_btnRecord, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_btnRecord, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_side(ui_btnRecord, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnRecord, lv_color_hex(0x4CD852), LV_PART_MAIN | LV_STATE_FOCUSED);
+    lv_obj_set_style_bg_opa(ui_btnRecord, 255, LV_PART_MAIN | LV_STATE_FOCUSED);
 
     ui_audioLabel1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_audioLabel1, LV_SIZE_CONTENT);   /// 1
@@ -156,6 +161,8 @@ void ui_audioconfig_screen_init(void)
     lv_obj_set_style_bg_opa(ui_btnBeep, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_btnBeep, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_side(ui_btnBeep, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnBeep, lv_color_hex(0x4CD852), LV_PART_MAIN | LV_STATE_FOCUSED);
+    lv_obj_set_style_bg_opa(ui_btnBeep, 255, LV_PART_MAIN | LV_STATE_FOCUSED);
 
     ui_LabelTime1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_LabelTime1, LV_SIZE_CONTENT);   /// 1
@@ -179,6 +186,8 @@ void ui_audioconfig_screen_init(void)
     lv_obj_set_style_bg_opa(ui_btnPlay, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_width(ui_btnPlay, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_side(ui_btnPlay, LV_BORDER_SIDE_FULL, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_btnPlay, lv_color_hex(0x4CD852), LV_PART_MAIN | LV_STATE_FOCUSED);
+    lv_obj_set_style_bg_opa(ui_btnPlay, 255, LV_PART_MAIN | LV_STATE_FOCUSED);
 
     ui_LabelInfo1 = lv_label_create(ui_audioconfig);
     lv_obj_set_width(ui_LabelInfo1, LV_SIZE_CONTENT);   /// 1
@@ -186,7 +195,7 @@ void ui_audioconfig_screen_init(void)
     lv_obj_set_x(ui_LabelInfo1, 309);
     lv_obj_set_y(ui_LabelInfo1, 121);
     lv_label_set_text(ui_LabelInfo1, "PLAY");
-    lv_obj_set_style_text_color(ui_LabelInfo1, lv_color_hex(0x616A78), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui_LabelInfo1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_LabelInfo1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_LabelInfo1, &lv_font_montserrat_10, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -215,7 +224,7 @@ void ui_audioconfig_screen_init(void)
     lv_obj_set_x(ui_beepLabel, 306);
     lv_obj_set_y(ui_beepLabel, 55);
     lv_label_set_text(ui_beepLabel, "ON");
-    lv_obj_set_style_text_color(ui_beepLabel, lv_color_hex(0x4BA32B), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_color(ui_beepLabel, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_beepLabel, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_beepLabel, &lv_font_montserrat_20, LV_PART_MAIN | LV_STATE_DEFAULT);
 
