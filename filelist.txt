@@ -7,11 +7,16 @@ screens/ui_dateandtime.c
 screens/ui_editslot.c
 screens/ui_schedule.c
 screens/ui_playbackImage.c
-screens/ui_recordingImage.c
+screens/ui_drawer.c
 ui.c
 components/ui_comp_hook.c
 ui_helpers.c
 ui_events.c
+images/ui_img_drawer_open_png.c
+images/ui_img_learning_png.c
+images/ui_img_drawer_open_image_png.c
+images/ui_img_drawer_opening_png.c
+images/ui_img_drawer_closing_png.c
 images/ui_img_1388130735.c
 images/ui_img_1649062918.c
 images/ui_img_419196496.c
@@ -25,8 +30,3 @@ images/ui_img_yes20x20xblack_png.c
 images/ui_img_playback_png.c
 images/ui_img_recording_png.c
 images/ui_img_paused_png.c
-images/ui_img_drawer_open_png.c
-images/ui_img_learning_png.c
-images/ui_img_drawer_open_image_png.c
-images/ui_img_drawer_opening_png.c
-images/ui_img_drawer_closing_png.c
