@@ -10,24 +10,23 @@
 extern "C" {
 #endif
 
-
 // SCREEN: ui_playback
 extern void ui_playback_screen_init(void);
 extern void ui_playback_screen_destroy(void);
-extern lv_obj_t *ui_playback;
-extern lv_obj_t *ui_Panel5;
-extern lv_obj_t *ui_settingLabel2;
-extern lv_obj_t *ui_iconImage2;
-extern lv_obj_t *ui_okLabel2;
-extern lv_obj_t *ui_boxImage2;
-extern lv_obj_t *ui_backLabel2;
-extern lv_obj_t *ui_btnYesPlayback;
-extern lv_obj_t *ui_yesLabelPlayback;
-extern lv_obj_t *ui_Image1;
-extern lv_obj_t *ui_btnNoPlayback;
-extern lv_obj_t *ui_Label1;
-extern lv_obj_t *ui_Image2;
-extern lv_obj_t *ui_Label2;
+extern lv_obj_t * ui_playback;
+extern lv_obj_t * ui_Panel5;
+extern lv_obj_t * ui_settingLabel2;
+extern lv_obj_t * ui_iconImage2;
+extern lv_obj_t * ui_okLabel2;
+extern lv_obj_t * ui_boxImage2;
+extern lv_obj_t * ui_backLabel2;
+extern lv_obj_t * ui_btnYesPlayback;
+extern lv_obj_t * ui_yesLabelPlayback;
+extern lv_obj_t * ui_Image1;
+extern lv_obj_t * ui_btnNoPlayback;
+extern lv_obj_t * ui_Label1;
+extern lv_obj_t * ui_Image2;
+extern lv_obj_t * ui_Label2;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

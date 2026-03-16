@@ -10,31 +10,30 @@
 extern "C" {
 #endif
 
-
 // SCREEN: ui_editslot
 extern void ui_editslot_screen_init(void);
 extern void ui_editslot_screen_destroy(void);
-extern lv_obj_t *ui_editslot;
-extern lv_obj_t *ui_Panel6;
-extern lv_obj_t *ui_editSlotPanel1;
-extern lv_obj_t *ui_iconImage3;
-extern lv_obj_t *ui_okLabel3;
-extern lv_obj_t *ui_boxImage3;
-extern lv_obj_t *ui_backLabel3;
-extern lv_obj_t *ui_btnSaveEditslot1;
-extern lv_obj_t *ui_Label13;
-extern lv_obj_t *ui_Panel_amt;
-extern lv_obj_t *ui_amtLabelEditslot1;
-extern lv_obj_t *ui_Panel_act;
-extern lv_obj_t *ui_actLabelEditslot1;
-extern lv_obj_t *ui_DateLabelEditslot1;
-extern lv_obj_t *ui_Label14;
-extern lv_obj_t *ui_Panel7;
-extern lv_obj_t *ui_Label10;
-extern lv_obj_t *ui_panel_hour;
-extern lv_obj_t *ui_HourLabelEditslot1;
-extern lv_obj_t *ui_Panel_min;
-extern lv_obj_t *ui_MinLabelEditslot1;
+extern lv_obj_t * ui_editslot;
+extern lv_obj_t * ui_Panel6;
+extern lv_obj_t * ui_editSlotPanel1;
+extern lv_obj_t * ui_iconImage3;
+extern lv_obj_t * ui_okLabel3;
+extern lv_obj_t * ui_boxImage3;
+extern lv_obj_t * ui_backLabel3;
+extern lv_obj_t * ui_btnSaveEditslot1;
+extern lv_obj_t * ui_Label13;
+extern lv_obj_t * ui_Panel_amt;
+extern lv_obj_t * ui_amtLabelEditslot1;
+extern lv_obj_t * ui_Panel_act;
+extern lv_obj_t * ui_actLabelEditslot1;
+extern lv_obj_t * ui_DateLabelEditslot1;
+extern lv_obj_t * ui_Label14;
+extern lv_obj_t * ui_Panel7;
+extern lv_obj_t * ui_Label10;
+extern lv_obj_t * ui_panel_hour;
+extern lv_obj_t * ui_HourLabelEditslot1;
+extern lv_obj_t * ui_Panel_min;
+extern lv_obj_t * ui_MinLabelEditslot1;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

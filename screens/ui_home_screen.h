@@ -10,30 +10,29 @@
 extern "C" {
 #endif
 
-
 // SCREEN: ui_home_screen
 extern void ui_home_screen_screen_init(void);
 extern void ui_home_screen_screen_destroy(void);
-extern lv_obj_t *ui_home_screen;
-extern lv_obj_t *ui_Panel1;
-extern lv_obj_t *ui_cur_time;
-extern lv_obj_t *ui_cur_date;
-extern lv_obj_t *ui_Panel2;
-extern lv_obj_t *ui_Label3;
-extern lv_obj_t *ui_next_meal_time;
-extern lv_obj_t *ui_volume;
-extern lv_obj_t *ui_Label6;
-extern lv_obj_t *ui_drawer_open;
-extern lv_obj_t *ui_learningAddcard2;
-extern lv_obj_t *ui_drawer_opened;
-extern lv_obj_t *ui_drawer_opening;
-extern lv_obj_t *ui_drawer_closing;
+extern lv_obj_t * ui_home_screen;
+extern lv_obj_t * ui_Panel1;
+extern lv_obj_t * ui_cur_time;
+extern lv_obj_t * ui_cur_date;
+extern lv_obj_t * ui_Panel2;
+extern lv_obj_t * ui_Label3;
+extern lv_obj_t * ui_next_meal_time;
+extern lv_obj_t * ui_volume;
+extern lv_obj_t * ui_Label6;
+extern lv_obj_t * ui_drawer_open;
+extern lv_obj_t * ui_learning_Addcard;
+extern lv_obj_t * ui_drawer_opened;
+extern lv_obj_t * ui_drawer_opening;
+extern lv_obj_t * ui_drawer_closing;
 // CUSTOM VARIABLES
-extern lv_obj_t *uic_home_screen;
-extern lv_obj_t *uic_cur_time;
-extern lv_obj_t *uic_cur_date;
-extern lv_obj_t *uic_next_meal_time;
-extern lv_obj_t *uic_volume;
+extern lv_obj_t * uic_home_screen;
+extern lv_obj_t * uic_cur_time;
+extern lv_obj_t * uic_cur_date;
+extern lv_obj_t * uic_next_meal_time;
+extern lv_obj_t * uic_volume;
 
 #ifdef __cplusplus
 } /*extern "C"*/

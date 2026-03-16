@@ -7,7 +7,7 @@ SET(SOURCES screens/ui_home_screen.c
     screens/ui_editslot.c
     screens/ui_schedule.c
     screens/ui_playbackImage.c
-    screens/ui_drawer.c
+    screens/ui_Learning.c
     ui.c
     components/ui_comp_hook.c
     ui_helpers.c
@@ -26,9 +26,13 @@ SET(SOURCES screens/ui_home_screen.c
     images/ui_img_play19x19_png.c
     images/ui_img_yes20x20_png.c
     images/ui_img_no20x20_png.c
+    images/ui_img_cat_authorized_png.c
+    images/ui_img_cat_unknow_png.c
     images/ui_img_yes20x20xblack_png.c
     images/ui_img_playback_png.c
     images/ui_img_recording_png.c
-    images/ui_img_paused_png.c)
+    images/ui_img_paused_png.c
+    images/ui_img_iconcard_png.c
+    images/ui_img_saved_image_png.c)
 
 add_library(ui ${SOURCES})

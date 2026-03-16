@@ -10,29 +10,30 @@
 extern "C" {
 #endif
 
-
 // SCREEN: ui_info
 extern void ui_info_screen_init(void);
 extern void ui_info_screen_destroy(void);
-extern lv_obj_t *ui_info;
-extern lv_obj_t *ui_Panel10;
-extern lv_obj_t *ui_settingLabel3;
-extern lv_obj_t *ui_iconImage4;
-extern lv_obj_t *ui_okLabel4;
-extern lv_obj_t *ui_boxImage4;
-extern lv_obj_t *ui_backLabel4;
-extern lv_obj_t *ui_Panel11;
-extern lv_obj_t *ui_nameLabelInfo;
-extern lv_obj_t *ui_Label7;
-extern lv_obj_t *ui_Panel12;
-extern lv_obj_t *ui_fwLabelInfo;
-extern lv_obj_t *ui_Label4;
-extern lv_obj_t *ui_Panel13;
-extern lv_obj_t *ui_Label9;
-extern lv_obj_t *ui_Panel14;
-extern lv_obj_t *ui_modelLabelInfo;
-extern lv_obj_t *ui_serialLabelInfo;
-extern lv_obj_t *ui_Label11;
+extern lv_obj_t * ui_info;
+extern lv_obj_t * ui_Panel10;
+extern lv_obj_t * ui_settingLabel3;
+extern lv_obj_t * ui_iconImage4;
+extern lv_obj_t * ui_okLabel4;
+extern lv_obj_t * ui_boxImage4;
+extern lv_obj_t * ui_backLabel4;
+extern lv_obj_t * ui_Panel11;
+extern lv_obj_t * ui_nameLabelInfo;
+extern lv_obj_t * ui_Label7;
+extern lv_obj_t * ui_Panel12;
+extern lv_obj_t * ui_fwLabelInfo;
+extern lv_obj_t * ui_Label4;
+extern lv_obj_t * ui_Panel13;
+extern lv_obj_t * ui_Label9;
+extern lv_obj_t * ui_Panel14;
+extern lv_obj_t * ui_modelLabelInfo;
+extern lv_obj_t * ui_serialLabelInfo;
+extern lv_obj_t * ui_Label11;
+extern lv_obj_t * ui_cat_authorized;
+extern lv_obj_t * ui_cat_unknown;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

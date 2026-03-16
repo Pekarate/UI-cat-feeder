@@ -9,7 +9,7 @@
 ///////////////////// VARIABLES ////////////////////
 
 // EVENTS
-lv_obj_t *ui____initial_actions0;
+lv_obj_t * ui____initial_actions0;
 
 // IMAGES AND IMAGE SETS
 
@@ -24,34 +24,36 @@ lv_obj_t *ui____initial_actions0;
 
 ///////////////////// SCREENS ////////////////////
 
-void ui_init( void )
+void ui_init(void)
 {
-lv_disp_t *dispp = lv_display_get_default();
-lv_theme_t *theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED), false, LV_FONT_DEFAULT);
-lv_disp_set_theme(dispp, theme);
-ui_home_screen_screen_init();
-ui_settings_screen_init();
-ui_audioconfig_screen_init();
-ui_playback_screen_init();
-ui_info_screen_init();
-ui_dateandtime_screen_init();
-ui_editslot_screen_init();
-ui_schedule_screen_init();
-ui_playbackImage_screen_init();
-ui_drawer_screen_init();
-ui____initial_actions0 = lv_obj_create(NULL);
-lv_disp_load_scr( ui_home_screen);
+    lv_disp_t * dispp = lv_display_get_default();
+    lv_theme_t * theme = lv_theme_default_init(dispp, lv_palette_main(LV_PALETTE_BLUE), lv_palette_main(LV_PALETTE_RED),
+                                               false, LV_FONT_DEFAULT);
+    lv_disp_set_theme(dispp, theme);
+    ui_home_screen_screen_init();
+    ui_settings_screen_init();
+    ui_audioconfig_screen_init();
+    ui_playback_screen_init();
+    ui_info_screen_init();
+    ui_dateandtime_screen_init();
+    ui_editslot_screen_init();
+    ui_schedule_screen_init();
+    ui_playbackImage_screen_init();
+    ui_Learning_screen_init();
+    ui____initial_actions0 = lv_obj_create(NULL);
+    lv_disp_load_scr(ui_home_screen);
 }
 
-void ui_destroy( void )
-{ui_home_screen_screen_destroy();
-ui_settings_screen_destroy();
-ui_audioconfig_screen_destroy();
-ui_playback_screen_destroy();
-ui_info_screen_destroy();
-ui_dateandtime_screen_destroy();
-ui_editslot_screen_destroy();
-ui_schedule_screen_destroy();
-ui_playbackImage_screen_destroy();
-ui_drawer_screen_destroy();
+void ui_destroy(void)
+{
+    ui_home_screen_screen_destroy();
+    ui_settings_screen_destroy();
+    ui_audioconfig_screen_destroy();
+    ui_playback_screen_destroy();
+    ui_info_screen_destroy();
+    ui_dateandtime_screen_destroy();
+    ui_editslot_screen_destroy();
+    ui_schedule_screen_destroy();
+    ui_playbackImage_screen_destroy();
+    ui_Learning_screen_destroy();
 }
